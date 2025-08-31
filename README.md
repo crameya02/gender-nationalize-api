@@ -10,13 +10,13 @@ A .NET API that predicts gender and nationality based on a name input.
 5. create .env file on /GenderNationalizeAPI folder , FRONTEND_URL=http://localhost:5173 - change the port on where vite is listening to
 4. Start the API with `dotnet run`
 
-GENDERIZE_API=https://api.genderize.io
-GENDERIZE_API_KEY=
-NATIONALIZE_API=https://api.nationalize.io
-NATIONALIZE_API_KEY=
-TEST_NATIONALIZE_API=https://api.nationalize.io
-TEST_GENDERIZE_API=https://api.genderize.io
-FRONTEND_URL=http://localhost:5173 
+GENDERIZE_API=https://api.genderize.io<br>
+GENDERIZE_API_KEY=<br>
+NATIONALIZE_API=https://api.nationalize.io<br>
+NATIONALIZE_API_KEY=<br>
+TEST_NATIONALIZE_API=https://api.nationalize.io<br>
+TEST_GENDERIZE_API=https://api.genderize.io<br>
+FRONTEND_URL=http://localhost:5173 <br>
 
 ## Dependencies
 
@@ -38,10 +38,19 @@ This can be tested in "http://localhost:5017/swagger/index.html" - change the po
 
 Returns:
 ```json
+	
+Response body
+Download
 {
-  "name": "cram",
+  "name": "marc",
   "gender": "male",
-  "country": "Philippines"
+  "nationality": [
+    "France",
+    "Belgium",
+    "Cote D\"Ivoire",
+    "Luxembourg",
+    "Switzerland"
+  ]
 }
 ```
 # gender-nationalize-frontend
