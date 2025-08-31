@@ -1,6 +1,11 @@
 import { useState } from "react";
 import styles from "./ProfileForm.module.css";
 import ProfileResult from "./ProfileResult";
+/**
+ * A form that takes a first name and predicts the gender and country of origin.
+ * Renders a text input, a button, and a loading spinner.
+ * When the button is clicked, fetches the profile from the API and displays the result in a popup.
+ */
 function ProfileForm() {
     const [name, setName] = useState("");
     const [profile, setProfile] = useState(null);

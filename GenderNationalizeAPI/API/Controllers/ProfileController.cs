@@ -10,12 +10,24 @@ public class ProfileController : ControllerBase
     private readonly IGenderService _genderService;
     private readonly INationalityService _nationalityService;
 
+        /// <summary>
+        /// Constructor for the ProfileController
+        /// </summary>
+        /// <param name="genderService">The service that provides the gender data</param>
+        /// <param name="nationalityService">The service that provides the nationality data</param>
     public ProfileController(IGenderService genderService, INationalityService nationalityService)
     {
         _genderService = genderService;
         _nationalityService = nationalityService;
     }
 
+        /// <summary>
+        /// Gets the profile of the given name
+        /// </summary>
+        /// <param name="name">The name of the person</param>
+        /// <returns>Returns the assembled profile as a JSON response to the client.</returns>
+        /// <response code="400">The name parameter is required</response>
+        /// <response code="500">Internal server error</response>
     [HttpGet]
     public async Task<ActionResult<ProfileResult>> GetProfile([FromQuery] string name)
     {

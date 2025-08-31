@@ -7,6 +7,11 @@ namespace Domain.Helpers
     {
         private static Dictionary<string, string> CountryNames = new();
         
+        /// <summary>
+        /// Loads a JSON file containing country codes and names into memory.
+        /// If the file does not exist, prints a message to the console.
+        /// </summary>
+        /// <param name="path">Path to the JSON file.</param>
         public static void LoadFromFile(string path)
         {
             

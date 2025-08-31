@@ -1,5 +1,14 @@
 import styles from "./ProfileResult.module.css";
 
+/**
+ * ProfileResult component
+ *
+ * @param {Object} props
+ * @prop {Object} profile - the profile object from the API response
+ * @prop {function} onClose - the function to call when the popup should be closed
+ *
+ * @returns {ReactElement} the rendered component
+ */
 function ProfileResult({ profile, onClose }) {
   if (!profile) return null;
 
