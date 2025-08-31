@@ -38,9 +38,6 @@ This can be tested in "http://localhost:5017/swagger/index.html" - change the po
 
 Returns:
 ```json
-	
-Response body
-Download
 {
   "name": "marc",
   "gender": "male",
