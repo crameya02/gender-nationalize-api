@@ -1,6 +1,0 @@
-@GenderNationalizeAPIapp_HostAddress = http://localhost:5017
-
-GET {{GenderNationalizeAPIapp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
